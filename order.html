@@ -12,7 +12,7 @@
 <header>
     <div class="container">
         <div class="left">
-            <a href="#"><span></span>Войти в личный кабинет</a>
+            <a href="#" class="login"><span class="icon-user"></span>Войти в личный кабинет</a>
             <ul class="menu">
                 <li><a href="#">Оптовикам</a></li>
                 <li><a href="#">Корпоративным клиентам</a></li>
@@ -22,34 +22,34 @@
             </ul>
         </div>
         <div class="logo">
-            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="img/png/logo.png" alt=""></a>
         </div>
         <div class="right">
-            <a href="tel:8 (495) 648-8-456"><span></span>8 (495) 648-8-456</a>
-            <a href="#">Не дозвонились?</a>
-            <p>Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#">товаров <span>5</span> на сумму <span>2550 ₽</span></a>
+            <a href="tel:8 (495) 648-8-456" class="phone"><span class="icon-phone"></span>8 (495) 648-8-456</a>
+            <a href="#" class="callBack">Не дозвонились?</a>
+            <p class="timing">Мы работаем пн-пт 10:00 - 19:00</p>
+            <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на сумму <span>2550 ₽</span></a>
         </div>
     </div>
 </header>
 <div class="container">
     <div class="content">
-        <ul class="breadcrubms">
+        <ul class="breadCrumbs">
             <li><a href=""></a>Главная/</li>
             <li><a href=""></a>Корзина/</li>
             <li>Оформление заказа</li>
         </ul>
-        <h1>Оформление заказа</h1>
-        <form action="">
+        <h1 class="titleOrder">Оформление заказа</h1>
+        <form action="" class="makeOrder">
             <div>
-                <label for="city">Выбор города</label>
+                <label for="city" class="yourInformation">Выбор города</label>
                 <select name="city" id="city">
                     <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
                 </select>
             </div>
             <fieldset>
                 <h2>Способ доставки</h2>
-                <ul>
+                <ul class="wayDelivery">
                     <li>
                         <input type="radio" name="delivery" id="courier">
                         <label for="courier">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
@@ -81,35 +81,35 @@
             <fieldset>
                 <h2>Адрес доставки</h2>
                 <div>
-                    <label for="street">Улица<span>*</span></label>
+                    <label for="street" class="yourInformation">Улица<span class="star">*</span></label>
                     <input type="text" name="street" id="street">
                 </div>
                 <div>
-                    <label for="district">Район<span>*</span></label>
+                    <label for="district" class="yourInformation">Район<span class="star">*</span></label>
                     <input type="text" name="district" id="district">
                 </div>
                 <div>
                     <div>
-                        <label for="home">Дом<span>*</span></label>
+                        <label for="home" class="yourInformation">Дом<span class="star">*</span></label>
                         <input type="text" name="home" id="home">
                     </div>
                     <div>
-                        <label for="part">Корпус<span>*</span></label>
+                        <label for="part" class="yourInformation">Корпус<span class="star">*</span></label>
                         <input type="text" name="part" id="part">
                     </div>
                     <div>
-                        <label for="flat">Квартира/Офис<span>*</span></label>
+                        <label for="flat" class="yourInformation">Квартира/Офис<span class="star">*</span></label>
                         <input type="text" name="flat" id="flat">
                     </div>
                 </div>
                 <div>
-                    <label for="message">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                    <label for="message" class="yourInformation">Дополнительно (номер домофона, номер офиса и тд.)</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
             </fieldset>
             <fieldset>
                 <h2>Способ оплаты</h2>
-                <ul>
+                <ul class="wayPayment">
                     <li>
                         <input type="radio" name="pay" id="cash">
                         <label for="cash">Оплата при получении</label>
@@ -126,15 +126,15 @@
             <fieldset>
                 <h2>Ваши данные</h2>
                 <div>
-                    <label for="name">Имя<span>*</span></label>
+                    <label for="name" class="yourInformation">Имя<span class="star">*</span></label>
                     <input type="text" name="name" id="name">
                 </div>
                 <div>
-                    <label for="mail">Электронная почта<span>*</span></label>
+                    <label for="mail" class="yourInformation">Электронная почта<span class="star">*</span></label>
                     <input type="text" name="mail" id="mail">
                 </div>
                 <div>
-                    <label for="phone">Номер телефона<span>*</span></label>
+                    <label for="phone" class="yourInformation">Номер телефона<span class="star">*</span></label>
                     <input type="text" name="phone" id="phone">
                 </div>
             </fieldset>
@@ -168,9 +168,9 @@
         <span>пн-пт 10:00 - 19:00</span>
         <div class="socLink">
             <span>Ищите нас здесь</span>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <a href="" class="icon-soc1"></a>
+            <a href="" class="icon-soc2"></a>
+            <a href="" class="icon-soc3"></a>
         </div>
     </div>
     <div class="copyright">

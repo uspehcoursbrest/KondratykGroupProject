@@ -295,3 +295,138 @@ footer a.soc {
     line-height: 22px;
     color: #0069b4;
 }
+
+/*Корпоративным клиентам*/
+.wrapper .left p {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #333333;
+}
+
+.order label.formOrder {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 22px;
+    color: #666666;
+}
+
+.order .makeLogo {
+    font-size: 13px;
+    color: #333333;
+}
+
+.order span:not(.makeLogo) {
+    font-size: 11px;
+    color: #999999;
+}
+
+.order label.yesNo {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.order .file {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    text-decoration: underline;
+    color: #229647;
+}
+
+.order #number,
+.order #date {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.order button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.rightClient span {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+.rightClient p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.rightClient button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+/*Оформление заказа*/
+.titleOrder {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.makeOrder .yourInformation {
+    font-size: 13px;
+    font-style: italic;
+    line-height: 22px;
+    color: #666666;
+}
+
+.makeOrder #city {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.makeOrder h2 {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.wayDelivery li label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.wayDelivery li p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.wayDelivery li span {
+    color: #f26522;
+}
+
+span.star {
+    color: #ed1c24;
+}
+
+.wayPayment li label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.wayPayment li p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.makeOrder button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
