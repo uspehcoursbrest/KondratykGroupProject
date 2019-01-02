@@ -17,10 +17,21 @@ ul {
     list-style-type: none;
 }
 
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .container {
     width: 1010px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }
 
 header .login {
@@ -33,6 +44,8 @@ header .login {
 }
 
 .menu li {
+    display: inline-block;
+    margin-right: 18px;
 }
 
 .menu li a {
@@ -109,17 +122,34 @@ header .phone [class="icon"] {
     background-position: center;
 }
 
+.advanteges {
+    width: calc(100% - 320px);
+    float: left;
+}
+
+.advanteges .item {
+    width: 25%;
+    float: left;
+}
+
 .advanteges .item span {
     font-size: 14px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
 }
 
 .advanteges .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+}
+
+.subscribe {
+    width: 320px;
+    float: left;
+    background-color: #63b94a;
 }
 
 .subscribe label {
@@ -149,11 +179,43 @@ header .phone [class="icon"] {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+}
+
+.filter li + li {
+    margin-left: 18px;
 }
 
 .filter li a {
     text-decoration: none;
     color: #666666;
+}
+
+.card {
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #fff400;
+}
+
+.status.new {
+    background-color: #78ec71;
 }
 
 .card .img {
@@ -245,6 +307,27 @@ footer {
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;
+    background-color: #64ba4b;
+}
+
+.footMenu {
+    width: 50%;
+    float: left;
+}
+
+.footMenu .col {
+    width: 50%;
+    float: left;
+}
+
+.footCont {
+    width: 25%;
+    float: left;
+}
+
+.copyright {
+    width: 25%;
+    float: left;
 }
 
 footer a {
