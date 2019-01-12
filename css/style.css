@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -28,10 +30,20 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
-invisLink {
+a,
+button {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.invisLink {
     position: relative;
     z-index: 1;
 }
+
 .invisLink > a {
     display: block;
     position: absolute;
@@ -44,27 +56,35 @@ invisLink {
     text-indent: 200%;
     white-space: nowrap;
 }
+
 button {
     border: none;
     cursor: pointer;
 }
+
 .table {
     display: table;
     width: 100%;
 }
+
 .tCell {
     display: table-cell;
 }
+
 header .left,
 header .logo,
 header .right {
     width: 33.3333%;
     vertical-align: top;
 }
+
 header .login {
     font-size: 13px;
     line-height: 18px;
     color: #0069b4;
+}
+header .login:hover {
+    text-decoration-color: transparent;
 }
 
 .menu {
@@ -80,7 +100,9 @@ header .login {
     line-height: 28px;
     color: #333333;
 }
-
+.menu li a:hover {
+    text-decoration-color: transparent;
+}
 header .logo {
     text-align: center;
 }
@@ -88,6 +110,7 @@ header .logo {
 header .right {
     text-align: right;
 }
+
 header .phone {
     font-size: 20px;
     line-height: 20px;
@@ -137,10 +160,15 @@ header .login [class="icon"] {
 header .phone [class="icon"] {
     font-size: 20px;
 }
+header .phone:hover {
+    opacity: 0.7;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
 }
+
 .banner .sale {
     width: 305px;
     height: 360px;
@@ -188,11 +216,13 @@ header .phone [class="icon"] {
     background-color: #63b94a;
     padding: 20px;
 }
+
 .subscribe .wrap {
     display: table;
     width: 100%;
     margin-top: 10px;
 }
+
 .subscribe label {
     font-size: 16px;
     color: #ffffff;
@@ -244,11 +274,13 @@ header .phone [class="icon"] {
     text-decoration: none;
     color: #666666;
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
+
 .card {
     position: relative;
     border-bottom: 1px solid #e4e4e4;
@@ -285,10 +317,12 @@ header .phone [class="icon"] {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .card .content {
     min-height: 110px;
     position: relative;
 }
+
 .card .title {
     display: block;
     font-size: 15px;
@@ -301,12 +335,14 @@ header .phone [class="icon"] {
     line-height: 22px;
     color: #0069b4;
 }
+
 .card .buy {
     position: absolute;
     width: 100%;
     left: 0px;
     bottom: 10px;
 }
+
 .card .price {
     font-size: 20px;
     font-weight: 600;
@@ -332,10 +368,12 @@ header .phone [class="icon"] {
     border: none;
 
 }
+
 .widjets .wrap {
     display: flex;
     justify-content: space-between;
 }
+
 .widjets h2 {
     font-size: 18px;
     font-weight: 600;
@@ -376,8 +414,25 @@ header .phone [class="icon"] {
 
 .info .title {
     text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
 }
-
+.info .title::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #333333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.info .title.active::before {
+    transform: rotate(180deg);
+}
 footer {
     font-size: 13px;
     line-height: 22px;
@@ -565,6 +620,52 @@ footer a.soc {
 
 .wayDelivery li span {
     color: #f26522;
+}
+
+.orderList li {
+    padding-left: 40px;
+}
+
+.orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.radioBtn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.radioBtn:checked + label::before {
+    border-color: #51bf87;
+}
+.radioBtn:checked + label::after {
+    opacity: 1;
 }
 
 span.star {
