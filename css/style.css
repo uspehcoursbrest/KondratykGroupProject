@@ -94,7 +94,9 @@ header .login:hover {
     display: inline-block;
     margin-right: 18px;
 }
-
+.menu li a:hover {
+    text-decoration-color: transparent;
+}
 .menu li a {
     font-size: 13px;
     line-height: 28px;
@@ -127,7 +129,9 @@ header .callBack {
     color: #0069b4;
     border-bottom: 1px dashed #0069b4;
 }
-
+header .callBack:hover {
+    border-bottom: 1px solid #0069b4;
+}
 header .timing {
     font-size: 13px;
     line-height: 19px;
@@ -144,7 +148,9 @@ header .basket {
     background-repeat: no-repeat;
     background-position: left center;
 }
-
+header .basket:hover {
+    opacity: 0.7;
+}
 header .basket span {
     color: #1a9547;
 }
@@ -163,6 +169,7 @@ header .phone [class="icon"] {
 header .phone:hover {
     opacity: 0.7;
 }
+
 
 .banner {
     display: flex;
@@ -250,7 +257,9 @@ header .phone:hover {
     border: none;
 
 }
-
+.subscribe button:hover {
+    opacity: 0.7;
+}
 .subscribe .wrap span {
     display: table-cell;
     vertical-align: middle;
@@ -368,7 +377,11 @@ header .phone:hover {
     border: none;
 
 }
-
+.card button:hover {
+    background-color: #ffffff;
+    color: #ff7200;
+    border: 1px solid #ff7200;
+}
 .widjets .wrap {
     display: flex;
     justify-content: space-between;
