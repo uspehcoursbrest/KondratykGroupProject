@@ -181,10 +181,75 @@ header .phone:hover {
     opacity: 0.7;
 }
 
+header.mobile {
+    display: none;
+    position: relative;
+    padding: 18px 0;
+    background-color: #63ba49;
+}
+.mobileWrap {
+    display: table;
+    width: 100%;
+}
+.mobileWrap {
+    display: table;
+    width: 100%;
+}
+.menuMobile,
+.logoMobile,
+.basketMobile {
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+}
+.menuMobile {
+    cursor: pointer;
+}
+.menuMobile span {
+    display: block;
+    margin-bottom: 7px;
+    height: 5px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.menuDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    background-color: #63ba49;
+}
+.menuDropdown a {
+    font-size: 13px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.logoMobile {
+    width: 50%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.basketMobile {
+    text-align: right;
+}
+.basketMobile a {
+    display: inline-block;
+    width: 44px;
+    height: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .banner {
     display: flex;
     justify-content: space-between;
+    margin-top: 17px;
 }
 
 .banner .sale {
@@ -203,7 +268,9 @@ header .phone:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.advSub {
+    margin-top: 30px;
+}
 .advanteges {
     width: calc(100% - 320px);
     float: left;
@@ -280,7 +347,38 @@ header .phone:hover {
     color: rgba(255, 255, 255, 0.5);
     padding-left: 20px;
 }
-
+.mobileSub {
+    display: none;
+    margin-bottom: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
+.mobileSub label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+}
+.mobileSub input {
+    float: left;
+    padding: 0 10px;
+    width: 66.6666%;
+    height: 26px;
+    line-height: 26px;
+    color: #999999;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+.mobileSub button {
+    float: right;
+    width: 33.3333%;
+    line-height: 45;
+    color: #ffffff;
+    background-color: #259b43;
+    border: none;
+    outline: none;
+}
 .filter li {
     font-size: 13px;
     line-height: 16px;
@@ -296,11 +394,17 @@ header .phone:hover {
     text-decoration: none;
     color: #666666;
 }
-
+.filterSelect {
+    display: none;
+}
+.catalog {
+    margin-top: 23px;
+}
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-gap: 40px;
+    margin-top: 33px;
 }
 
 .card {
@@ -400,6 +504,7 @@ header .phone:hover {
 .widjets .wrap {
     display: flex;
     justify-content: space-between;
+    margin-top: 58px;
 }
 
 .widjets h2 {
@@ -408,6 +513,7 @@ header .phone:hover {
     line-height: 22px;
     text-align: center;
     color: #666666;
+    margin-top: 58px;
 }
 
 .widjets .item:first-child,
@@ -426,7 +532,9 @@ header .phone:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+ul.tabs {
+    margin-top: 39px;
+}
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
@@ -754,13 +862,109 @@ span.star {
     }
 }
 
-}
 @media (max-width: 991px) {
     .container {
         width: 780px;
     }
-
+    header .left{
+        width: 40%;
+    }
+    header .right{
+        width: 40%;
+    }
+    header .logo{
+        width: 40%;
+    }
+    .banner > div {
+        height: 260px;
+    }
+    .banner .sale {
+        width: 220px;
+    }
+    .banner .slider {
+        width: 470px;
+    }
+    .advanteges {
+        width: 100%;
+    }
+    .subscribe {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .filter {
+        display: none;
+    }
+    .filterSelect {
+        float: left;
+        display: block;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footMenu {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footMenu .col {
+        float: none;
+        width: 100%;
+    }
+    .footMenu .col li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .footCont {
+        width: 50%;
+    }
+    .copyright {
+        width: 50%;
+    }
+    .socLink div {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
     @media (max-width: 767px) {
         .container {
             width: 100%;
         }
+        header,
+        .banner,
+        .advSub,
+        .info {
+            display: none;
+        }
+        header.mobile {
+            display: block;
+        }
+        .cards {
+            display: block;
+        }
+        .card {
+            width: 100%;
+        }
+        .card .img {
+            height: 270px;
+        }
+        .mobileSub {
+            display: block;
+        }
+        .contacts {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+        }
+        .socLink div {
+            position: relative;
+            bottom: 0;
+        }
+    }

@@ -38,6 +38,28 @@
         </div>
     </div>
 </header>
+<header class="mobile">
+    <div class="container">
+        <div class="mobileWrap">
+            <div class="menuMobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menuDropdown">
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Корпоративным клиентам</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О мастерской</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="logoMobile" style="background-image:url(img/png/calendar.png);"></div>
+            <div class="basketMobile">
+                <a href="#" style="background-image:url(img/png/basket.png);"></a>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="container">
     <div class="content">
         <!--блок баннер-->
@@ -79,6 +101,13 @@
                     </div>
                 </form>
             </div>
+            <div class="mobileSub clear">
+                <form action="#">
+                    <label for="sub">Узнавайте о новинках первыми!</label>
+                    <input type="text" name="subsribe" placeholder="Введите ваш e-mail" required>
+                    <button>Ok</button>
+                </form>
+            </div>
         </div>
         <!--блок каталог-->
         <div class="catalog">
@@ -97,6 +126,18 @@
                 <div class="view">
                     <span></span>
                     <span></span>
+                </div>
+                <div class="filterSelect">
+                    <select name="gift" id="giftFilter">
+                        <option value="Все">Все</option>
+                        <option value="Хиты">Хиты</option>
+                        <option value="Новинки">Новинки</option>
+                        <option value="Распродажа">Распродажа</option>
+                        <option value="День рождения">День рождения</option>
+                        <option value="">8 марта</option>
+                        <option value="">Любимому</option>
+                        <option value="">Лучшему другу</option>
+                    </select>
                 </div>
             </div>
             <div class="cards">
