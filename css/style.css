@@ -649,11 +649,18 @@ footer a.soc {
 }
 
 /*Корпоративным клиентам*/
+.breadCrumbs {
+    margin-top: 23px;
+}
+.breadCrumbs li {
+    display: inline-block;
+}
 .wrapper .left p {
     font-size: 13px;
     font-weight: normal;
     line-height: 22px;
     color: #333333;
+    width: 277px;
 }
 
 .order label.formOrder {
@@ -698,8 +705,97 @@ footer a.soc {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
+    width: 130px;
+    height: 32px;
+    background-color: #ff7200;
 }
 
+.wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+.wrapper .left .order {
+    width: 308px;
+    height: 621px;
+    background-color: #f9f9f9;
+    padding: 15px 12px;
+    margin-top: 13px;
+}
+.wrapper .left .order .Face,
+.wrapper .left .order .contactPhone {
+    margin-top: 8px;
+}
+.wrapper .left .order #name,
+.wrapper .left .order #contactFace,
+.wrapper .left .order #phone {
+    width: 282px;
+    height: 28px;
+    border: 1px solid #d6d6d6;
+}
+.wrapper .left .logoMake {
+    margin-top: 10px;
+}
+.wrapper .logoFlex {
+    display: flex;
+}
+.wrapper .left span {
+    display: block;
+}
+.wrapper .left .logoYesNo {
+    margin-left: 30px;
+    margin-top: 8px;
+}
+.wrapper .left .logoYesNo #no {
+    margin-left: 10px;
+}
+.wrapper .left .logoYesNo label {
+    position: relative;
+    padding-right: 28px;
+}
+.radioBtn2 {
+    display: none;
+}
+.radioBtn2:not(checked) + .yesNO::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioBtn2:not(checked) + .yesNO::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.radioBtn2:checked + .yesNO::before {
+    border-color: #51bf87;
+}
+
+.radioBtn2:checked + .yesNO::after {
+    opacity: 1;
+}
+.wrapper .left .logoYesNo li {
+    display: inline-block;
+}
+
+.rightClient {
+    flex-basis: 631px;
+    padding-left: 37px;
+}
 .rightClient span {
     font-size: 25px;
     font-weight: 600;
@@ -707,16 +803,43 @@ footer a.soc {
     color: #333333;
 }
 
-.rightClient p {
+.freshGift p,
+.different > p,
+.figures > p {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
 }
+.rightClient .freshGift > p {
+    padding-top: 10px;
+}
+.rightClient .freshGift p + p {
+    padding-top: 22px;
+}
+.rightClient .different,
+.rightClient .figures {
+    margin-top: 17px;
+}
 
+.rightClient .different > p,
+.rightClient .figures > p {
+    padding-top: 10px;
+}
+.rightClient .different p + p,
+.rightClient .different p + p {
+    padding-top: 22px;
+}
 .rightClient button {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
+    margin-top: 32px;
+    width: 194px;
+    height: 32px;
+    background-color: #64ba4a;
+}
+footer.client {
+    margin-top: 57px;
 }
 
 /*Оформление заказа*/
