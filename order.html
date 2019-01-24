@@ -49,21 +49,21 @@
         </ul>
         <h1 class="titleOrder">Оформление заказа</h1>
         <form action="" class="makeOrder">
-            <div>
+            <div class="yourInfo">
                 <label for="city" class="yourInformation">Выбор города</label>
                 <select name="city" id="city">
                     <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
                 </select>
             </div>
-            <fieldset>
+            <fieldset class="way">
                 <h2>Способ доставки</h2>
                 <ul class="wayDelivery orderList">
                     <li>
                         <input type="radio" name="delivery" id="courier" class="radioBtn">
                         <label for="courier">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
-                        <p>Заказ оформленный:
-                            - до 16:00 будет доставлен на следующий рабочий день;
-                            - после 16:00 будет доставлен через один рабочий день;</p>
+                        <span>Заказ оформленный:</span>
+                        <span>- до 16:00 будет доставлен на следующий рабочий день;</span>
+                        <span>- после 16:00 будет доставлен через один рабочий день;</span>
                     </li>
                     <li>
                         <input type="radio" name="delivery" id="express" class="radioBtn">
@@ -77,7 +77,7 @@
                         <label for="gift">Доставить в подарок 450 р.</label>
                         <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка
                             осуществляется только по предоплате.
-                            <span>Дополнительная услуга — подарочная упаковка</span></p>
+                            <span class="dopOr">Дополнительная услуга — подарочная упаковка</span></p>
                     </li>
                     <li>
                         <input type="radio" name="delivery" id="independet" class="radioBtn">
@@ -86,64 +86,65 @@
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="address">
                 <h2>Адрес доставки</h2>
-                <div>
+                <div class="street">
                     <label for="street" class="yourInformation">Улица<span class="star">*</span></label>
-                    <input type="text" name="street" id="street">
+                    <input type="text" name="street" id="street" class="stanIn">
                 </div>
-                <div>
+                <div class="district">
                     <label for="district" class="yourInformation">Район<span class="star">*</span></label>
-                    <input type="text" name="district" id="district">
+                    <input type="text" name="district" id="district" class="stanIn">
                 </div>
-                <div>
-                    <div>
+                <div class="tableAddress">
+                    <div class="home">
                         <label for="home" class="yourInformation">Дом<span class="star">*</span></label>
-                        <input type="text" name="home" id="home">
+                        <input type="text" name="home" id="home" class="stanIn2">
                     </div>
-                    <div>
+                    <div class="part">
                         <label for="part" class="yourInformation">Корпус<span class="star">*</span></label>
-                        <input type="text" name="part" id="part">
+                        <input type="text" name="part" id="part" class="stanIn2">
                     </div>
-                    <div>
+                    <div class="flat">
                         <label for="flat" class="yourInformation">Квартира/Офис<span class="star">*</span></label>
-                        <input type="text" name="flat" id="flat">
+                        <input type="text" name="flat" id="flat" class="stanIn3">
                     </div>
                 </div>
-                <div>
-                    <label for="message" class="yourInformation">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                <div class="message">
+                    <label for="message" class="yourInformation">Дополнительно (номер домофона, номер офиса и
+                        тд.)</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="paymentFiel">
                 <h2>Способ оплаты</h2>
                 <ul class="wayPayment">
-                    <li>
+                    <li class="cash">
                         <input type="radio" name="pay" id="cash">
                         <label for="cash">Оплата при получении</label>
                         <p>Вы сможете оплатить стоимость заказа наличными
                             при получении заказа от курьера.</p>
                     </li>
-                    <li>
+                    <li class="electronic">
                         <input type="radio" name="pay" id="electronic">
                         <label for="electronic">Оплата электронным способом (Робокасса)</label>
                         <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="facts">
                 <h2>Ваши данные</h2>
-                <div>
+                <div class="name">
                     <label for="name" class="yourInformation">Имя<span class="star">*</span></label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" class="stanIn">
                 </div>
-                <div>
+                <div class="mail">
                     <label for="mail" class="yourInformation">Электронная почта<span class="star">*</span></label>
-                    <input type="text" name="mail" id="mail">
+                    <input type="text" name="mail" id="mail" class="stanIn">
                 </div>
-                <div>
+                <div class="phoneOrder">
                     <label for="phone" class="yourInformation">Номер телефона<span class="star">*</span></label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone" class="stanIn">
                 </div>
             </fieldset>
             <button>Продолжить</button>
@@ -151,7 +152,7 @@
     </div>
 </div>
 <!--блок подвала сайта-->
-<footer>
+<footer class="orderFooter">
     <div class="container">
         <div class="clear">
             <ul class="footMenu clear">

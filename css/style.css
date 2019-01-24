@@ -66,6 +66,7 @@ button {
 .table {
     display: table;
     width: 100%;
+    margin-top: 27px;
 }
 
 .tCell {
@@ -90,6 +91,12 @@ header .login:hover {
 }
 
 .menu {
+    margin-top: 36px;
+    width: 300px;
+}
+
+header .menu .active {
+    color: #ff7200;
 }
 
 .menu li {
@@ -134,6 +141,7 @@ header .callBack {
     text-decoration: none;
     color: #0069b4;
     border-bottom: 1px dashed #0069b4;
+    padding-top: 5px;
 }
 
 header .callBack:hover {
@@ -144,6 +152,9 @@ header .timing {
     font-size: 13px;
     line-height: 19px;
     color: #999999;
+    padding-left: 200px;
+    padding-top: 10px;
+    padding-bottom: 21px;
 }
 
 header .basket {
@@ -187,14 +198,20 @@ header.mobile {
     padding: 18px 0;
     background-color: #63ba49;
 }
-.mobileWrap {
-    display: table;
-    width: 100%;
+header .container .table {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 14px;
 }
 .mobileWrap {
     display: table;
     width: 100%;
 }
+
+.mobileWrap {
+    display: table;
+    width: 100%;
+}
+
 .menuMobile,
 .logoMobile,
 .basketMobile {
@@ -202,9 +219,11 @@ header.mobile {
     width: 25%;
     vertical-align: middle;
 }
+
 .menuMobile {
     cursor: pointer;
 }
+
 .menuMobile span {
     display: block;
     margin-bottom: 7px;
@@ -213,6 +232,7 @@ header.mobile {
     background-color: #ffffff;
     border-radius: 2px;
 }
+
 .menuDropdown {
     display: none;
     position: absolute;
@@ -223,21 +243,25 @@ header.mobile {
     z-index: 1;
     background-color: #63ba49;
 }
+
 .menuDropdown a {
     font-size: 13px;
     line-height: 28px;
     text-decoration: none;
     color: #ffffff;
 }
+
 .logoMobile {
     width: 50%;
     height: 80px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .basketMobile {
     text-align: right;
 }
+
 .basketMobile a {
     display: inline-block;
     width: 44px;
@@ -270,12 +294,14 @@ header.mobile {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .dots {
     position: absolute;
     right: 15px;
     bottom: 10px;
     z-index: 1;
 }
+
 .dots button {
     padding: 0;
     width: 8px;
@@ -284,21 +310,26 @@ header.mobile {
     opacity: 0.5;
     border-radius: 50%;
 }
+
 .dots button + button {
     margin-left: 12px;
 }
+
 .dots button.active {
     opacity: 1;
 }
+
 .banner > div {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .advSub {
     margin-top: 30px;
 }
+
 .advanteges {
     width: calc(100% - 320px);
     float: left;
@@ -375,12 +406,14 @@ header.mobile {
     color: rgba(255, 255, 255, 0.5);
     padding-left: 20px;
 }
+
 .mobileSub {
     display: none;
     margin-bottom: 50px;
     padding: 0 5px;
     text-align: center;
 }
+
 .mobileSub label {
     display: block;
     margin-bottom: 20px;
@@ -388,6 +421,7 @@ header.mobile {
     font-size: 14px;
     color: #666666;
 }
+
 .mobileSub input {
     float: left;
     padding: 0 10px;
@@ -398,6 +432,7 @@ header.mobile {
     outline: none;
     border: 1px solid #e8e8e8;
 }
+
 .mobileSub button {
     float: right;
     width: 33.3333%;
@@ -407,6 +442,7 @@ header.mobile {
     border: none;
     outline: none;
 }
+
 .filter li {
     font-size: 13px;
     line-height: 16px;
@@ -422,12 +458,15 @@ header.mobile {
     text-decoration: none;
     color: #666666;
 }
+
 .filterSelect {
     display: none;
 }
+
 .catalog {
     margin-top: 23px;
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -440,6 +479,7 @@ header.mobile {
     border-bottom: 1px solid #e4e4e4;
     z-index: 1;
 }
+
 .thumbdnail {
     position: absolute;
     display: none;
@@ -450,9 +490,10 @@ header.mobile {
     height: 356px;
     background-color: #ffffff;
     border: 1px solid #e1e1e1;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
     z-index: -1;
 }
+
 .thumbdnail .pic {
     margin-bottom: 10px;
     width: 53px;
@@ -461,9 +502,11 @@ header.mobile {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .thumbdnail .pic.active {
     border: 1px solid #259c47;
 }
+
 .status {
     position: absolute;
     display: block;
@@ -584,9 +627,11 @@ header.mobile {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 ul.tabs {
     margin-top: 39px;
 }
+
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
@@ -623,25 +668,32 @@ ul.tabs {
 .info .title.active::before {
     transform: rotate(180deg);
 }
+
 .info.ui-tabs {
     padding: 0;
 }
+
 .info.ui-tabs .ui-tabs-nav {
     padding: 0;
 }
+
 .info.ui-tabs .ui-tabs-nav li {
     margin: 0;
 }
+
 .info.ui-tabs .ui-tabs-nav li.ui-tabs-active {
     margin: 0;
     padding: 0;
 }
+
 .info.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     padding: 0 15px;
 }
+
 .info.ui-tabs .ui-tabs-pane1 {
     padding: 0;
 }
+
 .info .tabs a {
     display: block;
     font-size: 14px;
@@ -652,6 +704,7 @@ ul.tabs {
     height: 45px;
     line-height: 45px;
 }
+
 .info .tabs li.ui-tabs-active a,
 .info .tabs li a:hover {
     border: none;
@@ -659,11 +712,17 @@ ul.tabs {
     color: #1c9847;
     cursor: pointer;
 }
+
 footer {
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;
     background-color: #64ba4b;
+}
+
+footer .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .footMenu {
@@ -674,16 +733,28 @@ footer {
 .footMenu .col {
     width: 50%;
     float: left;
+
 }
 
 .footCont {
     width: 25%;
     float: left;
+    padding-left: 33px;
+}
+
+.footCont span {
+    display: block;
 }
 
 .copyright {
     width: 25%;
     float: left;
+    padding-left: 72px;
+    text-align: right;
+}
+
+.copyright span {
+    display: block;
 }
 
 footer a {
@@ -694,11 +765,36 @@ footer a {
 footer a.soc {
     font-size: 21px;
 }
+
+footer .socLink {
+    position: relative;
+}
+
+footer .socLink .icon-soc1 {
+    position: absolute;
+    top: 0;
+    left: 190px;
+    font-size: 20px;
+}
+
+footer .socLink .icon-soc2 {
+    position: absolute;
+    top: 0;
+    left: 159px;
+    font-size: 20px;
+}
+footer .socLink .icon-soc3 {
+    position: absolute;
+    top: 0;
+    left: 123px;
+    font-size: 20px;
+}
 .up {
     position: fixed;
     left: 10px;
     bottom: 10px;
 }
+
 /*Новости подробно*/
 .breadCrumbs li a, .breadCrumbs li {
     font-size: 12px;
@@ -712,6 +808,7 @@ footer a.soc {
     line-height: 22px;
     color: #333333;
     font-weight: 600;
+    padding-top: 14px;
 }
 
 .secCap {
@@ -719,6 +816,7 @@ footer a.soc {
     line-height: 22px;
     color: #333333;
     font-weight: 600;
+    padding-top: 45px;
 }
 
 .newsDate {
@@ -726,11 +824,26 @@ footer a.soc {
     line-height: 22px;
     color: #aaaaaa;
 }
-
+.newsImg {
+    width: 100%;
+    height: 210px;
+    background-color: #b3b3b3;
+    margin-top: 15px;
+}
 .newsTxt {
     font-size: 13px;
     line-height: 19px;
     color: #333333;
+}
+.newsTxt1 {
+    padding-top: 16px;
+}
+.newsTxt2 {
+    padding-top: 19px;
+}
+.newsTxt3 {
+    padding-top: 19px;
+    padding-bottom: 30px;
 }
 
 .moreNews {
@@ -738,14 +851,18 @@ footer a.soc {
     line-height: 22px;
     color: #0069b4;
 }
-
+.newsFooter {
+    margin-top: 41px;
+}
 /*Корпоративным клиентам*/
 .breadCrumbs {
-    margin-top: 23px;
+    margin-top: 8px;
 }
+
 .breadCrumbs li {
     display: inline-block;
 }
+
 .wrapper .left p {
     font-size: 13px;
     font-weight: normal;
@@ -759,6 +876,8 @@ footer a.soc {
     font-style: italic;
     line-height: 22px;
     color: #666666;
+    width: 100%;
+    display: inline-block;
 }
 
 .order .makeLogo {
@@ -792,6 +911,17 @@ footer a.soc {
     color: #333333;
 }
 
+.order .dopInfo {
+    margin-top: 13px;
+    width: 283px;
+    height: 125px;
+}
+
+.order .dopInfo textarea {
+    width: 284px;
+    height: 125px;
+}
+
 .order button {
     font-size: 14px;
     line-height: 22px;
@@ -799,12 +929,14 @@ footer a.soc {
     width: 130px;
     height: 32px;
     background-color: #ff7200;
+    margin-top: 44px;
 }
 
 .wrapper {
     display: flex;
     margin-top: 15px;
 }
+
 .wrapper .left .order {
     width: 308px;
     height: 621px;
@@ -812,10 +944,12 @@ footer a.soc {
     padding: 15px 12px;
     margin-top: 13px;
 }
+
 .wrapper .left .order .Face,
 .wrapper .left .order .contactPhone {
     margin-top: 8px;
 }
+
 .wrapper .left .order #name,
 .wrapper .left .order #contactFace,
 .wrapper .left .order #phone {
@@ -823,29 +957,37 @@ footer a.soc {
     height: 28px;
     border: 1px solid #d6d6d6;
 }
+
 .wrapper .left .logoMake {
     margin-top: 10px;
 }
+
 .wrapper .logoFlex {
     display: flex;
 }
+
 .wrapper .left span {
     display: block;
 }
+
 .wrapper .left .logoYesNo {
     margin-left: 30px;
     margin-top: 8px;
 }
+
 .wrapper .left .logoYesNo #no {
     margin-left: 10px;
 }
+
 .wrapper .left .logoYesNo label {
     position: relative;
     padding-right: 28px;
 }
+
 .radioBtn2 {
     display: none;
 }
+
 .radioBtn2:not(checked) + .yesNO::before {
     content: '';
     display: block;
@@ -872,6 +1014,7 @@ footer a.soc {
     opacity: 0;
     transition: all 0.3s;
 }
+
 .radioBtn2:checked + .yesNO::before {
     border-color: #51bf87;
 }
@@ -879,14 +1022,16 @@ footer a.soc {
 .radioBtn2:checked + .yesNO::after {
     opacity: 1;
 }
+
 .wrapper .left .logoYesNo li {
     display: inline-block;
 }
 
 .rightClient {
-    flex-basis: 631px;
+    flex-basis: 670px;
     padding-left: 37px;
 }
+
 .rightClient span {
     font-size: 25px;
     font-weight: 600;
@@ -901,12 +1046,15 @@ footer a.soc {
     line-height: 22px;
     color: #333333;
 }
+
 .rightClient .freshGift > p {
     padding-top: 10px;
 }
+
 .rightClient .freshGift p + p {
     padding-top: 22px;
 }
+
 .rightClient .different,
 .rightClient .figures {
     margin-top: 17px;
@@ -916,10 +1064,12 @@ footer a.soc {
 .rightClient .figures > p {
     padding-top: 10px;
 }
+
 .rightClient .different p + p,
 .rightClient .different p + p {
     padding-top: 22px;
 }
+
 .rightClient button {
     font-size: 14px;
     line-height: 22px;
@@ -929,6 +1079,7 @@ footer a.soc {
     height: 32px;
     background-color: #64ba4a;
 }
+
 footer.client {
     margin-top: 57px;
 }
@@ -938,25 +1089,42 @@ footer.client {
     font-size: 25px;
     line-height: 22px;
     color: #333333;
+    padding-top: 14px;
 }
+.makeOrder .yourInfo {
+    padding-top: 15px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 27px;
 
+}
 .makeOrder .yourInformation {
     font-size: 13px;
     font-style: italic;
     line-height: 22px;
     color: #666666;
+    display: inline-block;
+    width: 100%
 }
 
 .makeOrder #city {
     font-size: 13px;
     line-height: 22px;
     color: #333333;
+    width: 289px;
+    height: 28px;
 }
-
+fieldset {
+    border: 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+fieldset.way {
+    padding-bottom: 23px;
+}
 .makeOrder h2 {
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+    padding-top: 10px;
 }
 
 .wayDelivery li label {
@@ -964,17 +1132,27 @@ footer.client {
     line-height: 19px;
     color: #333333;
 }
-
-.wayDelivery li p {
+.wayDelivery {
+    padding-top: 15px;
+}
+.wayDelivery li p,
+.wayDelivery li span {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
 }
-
 .wayDelivery li span {
+    display: block;
+}
+.wayDelivery li p {
+    width: 420px;
+}
+.wayDelivery li span.dopOr {
     color: #f26522;
 }
-
+.wayDelivery li + li {
+    padding-top: 10px;
+}
 .orderList li {
     padding-left: 40px;
 }
@@ -984,7 +1162,51 @@ footer.client {
     padding-left: 40px;
     margin-left: -40px;
 }
+.stanIn {
+    width: 289px;
+    height: 28px;
+}
+.stanIn2 {
+    width: 59px;
+    height: 28px;
+}
+.stanIn3 {
+    width: 99px;
+    height: 28px;
+}
+.address .street{
+    padding-top: 16px;
+}
+.address .district,
+.tableAddress,
+.message {
+    padding-top: 8px;
+}
 
+.tableAddress {
+    display: table;
+    width: 290px;
+}
+.address .home {
+    display: table-cell;
+    width: 33.3333%;
+}
+.address .part {
+    display: table-cell;
+    width: 33.3333%;
+}
+.address .flat {
+    display: table-cell;
+    width: 33.3333%;
+}
+.message #message {
+    width: 289px;
+    height: 104px;
+    margin-top: 24px;
+}
+.address {
+    padding-bottom: 23px;
+}
 .radioBtn {
     display: none;
 }
@@ -1027,7 +1249,15 @@ footer.client {
 span.star {
     color: #ed1c24;
 }
-
+.wayPayment {
+    padding-top: 17px;
+}
+.wayPayment .cash p {
+    width: 305px;
+}
+.wayPayment .electronic {
+    padding-top: 13px;
+}
 .wayPayment li label {
     font-size: 13px;
     line-height: 19px;
@@ -1039,13 +1269,30 @@ span.star {
     line-height: 18px;
     color: #666666;
 }
-
+.paymentFiel {
+    padding-bottom: 19px;
+}
+.facts .name {
+    padding-top: 14px;
+}
+.facts .mail {
+    padding-top: 9px;
+}
+.facts .phoneOrder {
+    padding-top: 10px;
+}
 .makeOrder button {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
+    margin-top: 23px;
+    width: 192px;
+    height: 35px;
+    background-color: #ea5b0c;
 }
-
+.orderFooter {
+    margin-top: 68px;
+}
 @media (max-width: 1199px) {
     .container {
         width: 980px;
@@ -1060,6 +1307,7 @@ span.star {
         height: 350px;
         width: 620px;
     }
+
     .advanteges {
         width: calc(100% - 300px);
     }
@@ -1067,74 +1315,93 @@ span.star {
     .subscribe {
         width: 300px;
     }
+
     .card .img {
         height: 215px;
     }
-    }
-    .widjets {
-        display: none;
-    }
+}
+
+.widjets {
+    display: none;
+}
 
 
 @media (max-width: 991px) {
     .container {
         width: 780px;
     }
-    header .left{
+
+    header .left {
         width: 40%;
     }
-    header .right{
+
+    header .right {
         width: 40%;
     }
-    header .logo{
+
+    header .logo {
         width: 40%;
     }
+
     .banner > div {
         height: 260px;
     }
+
     .banner .sale {
         width: 220px;
     }
+
     .banner .slider {
         width: 470px;
     }
+
     .advanteges {
         width: 100%;
     }
+
     .subscribe {
         margin-top: 20px;
         width: 100%;
     }
+
     .filter {
         display: none;
     }
+
     .filterSelect {
         float: left;
         display: block;
     }
+
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .footMenu {
         display: inline-block;
         width: 100%;
         margin-bottom: 30px;
         text-align: center;
     }
+
     .footMenu .col {
         float: none;
         width: 100%;
     }
+
     .footMenu .col li {
         display: inline-block;
         margin: 0 10px;
     }
+
     .footCont {
         width: 50%;
     }
+
     .copyright {
         width: 50%;
     }
+
     .socLink div {
         position: absolute;
         bottom: 10px;
@@ -1143,42 +1410,52 @@ span.star {
         text-align: center;
     }
 }
-    @media (max-width: 767px) {
-        .container {
-            width: 100%;
-        }
-        header,
-        .banner,
-        .advSub,
-        .info {
-            display: none;
-        }
-        header.mobile {
-            display: block;
-        }
-        .cards {
-            display: block;
-        }
-        .card {
-            width: 100%;
-        }
-        .card .img {
-            height: 270px;
-        }
-        .mobileSub {
-            display: block;
-        }
-        .contacts {
-            margin-bottom: 20px;
-            width: 100%;
-            text-align: center;
-        }
-        .copyright {
-            width: 100%;
-            text-align: center;
-        }
-        .socLink div {
-            position: relative;
-            bottom: 0;
-        }
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
     }
+
+    header,
+    .banner,
+    .advSub,
+    .info {
+        display: none;
+    }
+
+    header.mobile {
+        display: block;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .img {
+        height: 270px;
+    }
+
+    .mobileSub {
+        display: block;
+    }
+
+    .contacts {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .socLink div {
+        position: relative;
+        bottom: 0;
+    }
+}
